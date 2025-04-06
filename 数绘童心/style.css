@@ -5,10 +5,12 @@
     box-sizing: border-box;
     font-family: "Microsoft YaHei", Arial, sans-serif;
 }
+
 body {
     background-color: #f0f8ff;
     line-height: 1.6;
 }
+
 header {
     background-color: rgb(143, 187, 232);
     height: 6.25rem;
@@ -223,176 +225,201 @@ footer {
     right: 0.625rem;
 }
 
-        /* 绘本列表 */
-        .product1 {
-            margin-top: 5cm;
-            max-width: 1200px;
-            margin: 5cm auto 0;
-            padding: 50px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+/* 绘本列表 */
+.product1 {
+    margin-top: 5cm;
+    max-width: 1200px;
+    margin: 5cm auto 0;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        .pdf-item {
-            text-align: center;
-            margin: 20px 30px;
-            flex: 0 0 calc(33.33% - 60px);
-            min-width: 300px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 6px 18px rgba(135, 206, 235, 0.15);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.pdf-item {
+    text-align: center;
+    margin: 20px 30px;
+    flex: 0 0 calc(33.33% - 60px);
+    min-width: 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(135, 206, 235, 0.15);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .pdf-item:hover {
-            transform: scale(1.03);
-        }
+.pdf-item:hover {
+    transform: scale(1.03);
+}
 
-        /* 关键图片样式：完整显示且大小一致 */
-        .pdf-item img {
-            width: 280px;
-            height: 400px;
-            object-fit: contain;
-            margin: 20px 0;
-            display: block;
-        }
+/* 关键图片样式：完整显示且大小一致 */
+.pdf-item img {
+    width: 280px;
+    height: 400px;
+    object-fit: contain;
+    margin: 20px 0;
+    display: block;
+}
 
-        button {
-            width: 200px;
-            padding: 12px 20px;
-            background-color: #87CEEB;
-            color: white;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            margin: 10px 0 30px;
-            transition: all 0.3s ease;
-        }
+button {
+    width: 200px;
+    padding: 12px 20px;
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 0 30px;
+    transition: all 0.3s ease;
+}
 
-        button:hover {
-            background-color: #4682B4;
-            box-shadow: 0 6px 18px rgba(135, 206, 235, 0.3);
-        }
+button:hover {
+    background-color: #4682B4;
+    box-shadow: 0 6px 18px rgba(135, 206, 235, 0.3);
+}
 
-        /* 响应式调整 */
-        @media (max-width: 768px) {
-            .pdf-item {
-                flex: 0 0 100%;
-                min-width: 280px;
-            }
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .pdf-item {
+        flex: 0 0 100%;
+        min-width: 280px;
+    }
 
-            .pdf-item img {
-                width: 240px;
-                height: 320px;
-            }
-        
-        }
-        /* 分类容器 */
-        .category-container {
-            margin-top: 3cm;
-            max-width: 1200px;
-            margin: 3cm auto 0;
-            padding: 50px 20px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-        }
+    .pdf-item img {
+        width: 240px;
+        height: 320px;
+    }
+
+}
+
+/* 分类容器 */
+.category-container {
+    margin-top: 3cm;
+    max-width: 1200px;
+    margin: 3cm auto 0;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
 
 /* 主分类板块样式 */
 .main-category {
-    background-color: white; /* 背景颜色设为白色 */
-    border-radius: 15px; /* 圆角半径为 15px */
-    box-shadow: 0 6px 18px rgba(135, 206, 235, 0.15); /* 添加阴影效果 */
-    padding: 30px 20px; /* 内边距，上下 30px，左右 20px */
+    background-color: white;
+    /* 背景颜色设为白色 */
+    border-radius: 15px;
+    /* 圆角半径为 15px */
+    box-shadow: 0 6px 18px rgba(135, 206, 235, 0.15);
+    /* 添加阴影效果 */
+    padding: 30px 20px;
+    /* 内边距，上下 30px，左右 20px */
+}
+
+/* 主分类板块标题样式 */
+.main-category h2 {
+    font-size: 24px;
+    /* 调整标题字体大小 */
+    color: #4682B4;
+    /* 标题文字颜色 */
+    margin-bottom: 20px;
+    /* 标题底部外边距为 20px */
+    border-bottom: 2px solid #87CEEB;
+    /* 标题底部添加 2px 宽的蓝色边框 */
+    padding-bottom: 10px;
+    /* 标题底部内边距为 10px */
+}
+
+/* 子分类板块样式 */
+.sub-category {
+    display: grid;
+    /* 使用网格布局 */
+    grid-template-columns: 1fr;
+    /* 定义网格列布局，只有一列 */
+    gap: 20px;
+    /* 网格项之间的间距为 20px */
+}
+
+/* 子分类板块内的每个分区样式 */
+.sub-category div {
+    padding: 10px;
+    /* 内边距为 10px */
+}
+
+/* 子分类板块内的小标题样式 */
+.sub-category h3 {
+    font-size: 20px;
+    /* 调整小标题字体大小 */
+    color: #333;
+    /* 小标题文字颜色 */
+    margin-bottom: 10px;
+    /* 小标题底部外边距为 10px */
+}
+
+/* 子分类板块内的无序列表样式 */
+.sub-category ul {
+    list-style: none;
+    /* 去除列表项前面的默认符号 */
+    padding: 0;
+    /* 去除内边距 */
+    margin: 0;
+    /* 去除外边距 */
+}
+
+/* 子分类板块内无序列表的列表项样式 */
+.sub-category ul li {
+    margin-bottom: 5px;
+    /* 列表项底部外边距为 5px */
+    padding: 0;
+    /* 去除内边距 */
+    display: block;
+    /* 确保列表项另起一行 */
+}
+
+/* 新增板块内容三列布局 */
+.sub-category.three-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sub-category div {
+    padding: 10px;
+}
+
+.sub-category h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sub-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-category ul li {
+    margin-bottom: 5px;
+    padding: 0;
+    display: block;
+}
+
+/* 新增板块占据两列 */
+.main-category.double-width {
+    grid-column: span 2;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .category-container {
+        grid-template-columns: 1fr;
     }
-    
-    /* 主分类板块标题样式 */
-    .main-category h2 {
-    font-size: 24px; /* 调整标题字体大小 */
-    color: #4682B4; /* 标题文字颜色 */
-    margin-bottom: 20px; /* 标题底部外边距为 20px */
-    border-bottom: 2px solid #87CEEB; /* 标题底部添加 2px 宽的蓝色边框 */
-    padding-bottom: 10px; /* 标题底部内边距为 10px */
-    }
-    
-    /* 子分类板块样式 */
+
     .sub-category {
-    display: grid; /* 使用网格布局 */
-    grid-template-columns: 1fr; /* 定义网格列布局，只有一列 */
-    gap: 20px; /* 网格项之间的间距为 20px */
+        grid-template-columns: 1fr;
     }
-    
-    /* 子分类板块内的每个分区样式 */
-    .sub-category div {
-    padding: 10px; /* 内边距为 10px */
-    }
-    
-    /* 子分类板块内的小标题样式 */
-    .sub-category h3 {
-    font-size: 20px; /* 调整小标题字体大小 */
-    color: #333; /* 小标题文字颜色 */
-    margin-bottom: 10px; /* 小标题底部外边距为 10px */
-    }
-    
-    /* 子分类板块内的无序列表样式 */
-    .sub-category ul {
-    list-style: none; /* 去除列表项前面的默认符号 */
-    padding: 0; /* 去除内边距 */
-    margin: 0; /* 去除外边距 */
-    }
-    
-    /* 子分类板块内无序列表的列表项样式 */
-    .sub-category ul li {
-    margin-bottom: 5px; /* 列表项底部外边距为 5px */
-    padding: 0; /* 去除内边距 */
-    display: block; /* 确保列表项另起一行 */
-    }
-        /* 新增板块内容三列布局 */
-        .sub-category.three-columns {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
-        .sub-category div {
-            padding: 10px;
-        }
-
-        .sub-category h3 {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .sub-category ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .sub-category ul li {
-            margin-bottom: 5px;
-            padding: 0;
-            display: block;
-        }
-
-        /* 新增板块占据两列 */
-        .main-category.double-width {
-            grid-column: span 2;
-        }
-        /* 响应式调整 */
-        @media (max-width: 768px) {
-            .category-container {
-                grid-template-columns: 1fr;
-            }
-
-            .sub-category {
-                grid-template-columns: 1fr;
-            }
-        }
+}
 
 /* 新增圆点样式 */
 .slider-dots {

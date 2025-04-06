@@ -1,8 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
 }
 
+body {
+    background-color: #f0f8ff;
+    line-height: 1.6;
+}
 header {
     background-color: rgb(143, 187, 232);
     height: 6.25rem;
@@ -359,6 +365,24 @@ footer {
     position: relative;
     top: 6.25rem;
     width: 100%;
+}
+
+button {
+    width: 200px;
+    padding: 12px 20px;
+    background-color: #87CEEB;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px 0 30px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #4682B4;
+    box-shadow: 0 6px 18px rgba(135, 206, 235, 0.3);
 }
 
 /* 媒体查询，当屏幕宽度小于 768px 时（一般为平板和手机） */
