@@ -1,7 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
 }
+
+body {
+    background-color: #f0f8ff;
+    line-height: 1.6;
+} 
 
 header {
     background-color: rgb(143, 187, 232);
