@@ -89,7 +89,7 @@ ul li {
 }
 
 .image-container img {
-    width: 100%;
+    width: 100% !important;
     height: 30rem;
     object-fit: cover;
 }
