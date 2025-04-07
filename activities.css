@@ -79,7 +79,7 @@ ul li {
     display: flex;
     width: 80%;
     padding: 3% 10% 0 10%;
-    background-color: #fff;
+    background-color: #f0f8ff;
 }
 
 .image-container {
@@ -89,8 +89,10 @@ ul li {
 }
 
 .image-container img {
-    width: 30rem !important;
+    width: 35rem !important;
     height: 30rem;
+    position: relative;
+    top:2.5rem;
     object-fit: cover;
 }
 
